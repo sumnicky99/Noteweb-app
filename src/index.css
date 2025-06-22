@@ -1,37 +1,30 @@
+/* index.css */
+
 body {
-  margin: 1;
+  margin: 0;
   min-height: 100vh;
   background: linear-gradient(to right, #f6f1d3, #e9ebc7, #d3e47a);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: 'Poppins', sans-serif;
 }
 
 .card {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  background: linear-gradient(to right, #f6f1d3, #e9ebc7, #d3e47a);
+  height: 100vh;
+  width: 100vw; /* fill entire screen width */
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-family: 'Poppins', sans-serif;
-  background-color: rgb(202, 253, 15);
-  padding: 2rem;
-  border-radius: 1rem;
-  max-width: 9000px;
-  width: 900%;
-  flex-wrap: wrap;
   justify-content: space-between;
-
-
+  padding: 2rem;
+  background-color: rgb(221, 247, 128);
+  border-radius: 0rem;
+  position: relative; /* ✅ enables absolute positioning inside */
+  flex-wrap: wrap;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
 .text-section {
   flex: 1 1 300px;
-  align-items: center;
-  justify-content: center;
+  padding: 1rem;
 }
 
 .section-title {
@@ -45,16 +38,13 @@ body {
   text-align: left;
 }
 
-
 .main-heading {
   font-size: 2.5rem;
   font-weight: 900;
   color: #363b1e;
-  margin-top: 0rem;  /* ✅ Pulls it closer to section-title */
-  margin-bottom: 2rem;/*space between main-heading and login-button */
+  margin-top: 0rem;
+  margin-bottom: 2rem;
   text-align: left;
-  
-  
 }
 
 .login-button {
@@ -74,16 +64,8 @@ body {
 }
 
 .note-image {
-  max-width: 210px;           /* Smaller image */
-  border-radius: 1.5rem;      /* Smooth curved edges */
+  max-width: 210px;
+  border-radius: 1.5rem;
   box-shadow: 0 4px 10px rgba(203, 231, 43, 0.1);
-  margin-left: 9rem;
- 
-    
-  
-
-
+  margin-left: 2rem;
 }
-
-
-  
